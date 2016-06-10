@@ -1,18 +1,20 @@
 <!doctype html>
 <html>
     <head>
-      <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.4.min.css">
-      <link rel="stylesheet" type="text/css" href="css/animate-3.1.1.min.css">
-      <link rel="stylesheet" type="text/css" href="css/ionicons-2.0.1.min.css">
+      <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <!-- http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css -->
       <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
 
       <header class="site-header">
           <nav class="left-nav">
-              <a class="page-scroll" href="#four">Data</a>
-              <a href="/services">Services</a>
-              <a href="/constellation">Constellation</a>
+              <a class="page-scroll" href="#about">About</a>
+              <a class="page-scroll" href="#methodology">Methodology</a>
+              <a class="page-scroll" href="#products">Products</a>
+              <a class="page-scroll" href="#gallery">Gallery</a>
           </nav>
 
           <a href="/" class="site-logo">
@@ -20,9 +22,9 @@
           </a>
 
           <nav class="right-nav">
-              <a target="_blank" href="https://developers.urthecast.com/sign-in">Sign in</a>
-              <a href="http://gallery.urthecast.com" target="_blank">Gallery</a>
-              <a href="/live">Near Realtive FireMap</a>
+              <a target="_blank" href="">TechPage</a>
+              <a target="_blank" href="">Archieve FireMap</a>
+              <a target="_blank" href="http://maps.itu.edu.tr/maps//firemap-realtime/en/">Near Realtive FireMap</a>
           </nav>
       </header>
 
@@ -38,11 +40,11 @@
               <img src="img/mobile-menu.svg" alt="menu">
           </div>
           <nav class="mobile-nav padding-md-top">
-              <a href="/live">Near Realtime FireMap</a>
-              <a href="http://gallery.urthecast.com" target="_blank">Gallery</a>
-              <a href="/data">Data</a>
-              <a href="/services">Services</a>
-              <a href="/constellation">Constellation</a>
+              <a class="page-scroll" href="#about">About</a>
+              <a class="page-scroll" href="#methodology">Methodology</a>
+              <a class="page-scroll" href="#gallery">Gallery</a>
+              <a target="_blank" href="">TechPage</a>
+              <a target="_blank" href="http://maps.itu.edu.tr/maps//firemap-realtime/en/">Near Realtive FireMap</a>
           </nav>
       </header>
 
@@ -65,7 +67,7 @@
 
       </section>
 
-      <section class="bg-primary" id="one">
+      <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
@@ -75,12 +77,13 @@
                         Bootstrap's responsive grid comes in 4 sizes or "breakpoints": tiny (xs), small(sm), medium(md) and large(lg). These 4 grid sizes enable you create responsive layouts that behave accordingly on different devices.
                     </p>
                     <a href="#three" class="btn btn-default btn-xl page-scroll wow fadeIn">Learn More</a>
+                    <p><br></p>
                 </div>
             </div>
         </div>
       </section>
 
-      <section id="two">
+      <section id="products">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -114,9 +117,10 @@
                 </div>
             </div>
         </div>
+        <p><br></p>
       </section>
 
-      <section id="three" class="no-padding">
+      <section id="gallery" class="no-padding">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
@@ -195,7 +199,7 @@
         </div>
       </section>
 
-      <section class="container-fluid" id="four">
+      <section class="container-fluid" id="methodology">
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
                 <h2 class="text-center text-primary">Features</h2>
@@ -251,6 +255,7 @@
                 </div>
             </div>
         </div>
+        <p><br></p>
       </section>
 
       <aside class="bg-dark">
@@ -282,9 +287,10 @@
                 </div>
             </div>
         </div>
+        <p><br></p>
       </aside>
 
-      <section id="last">
+      <!-- <section id="last">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -318,7 +324,7 @@
                 </div>
             </div>
         </div>
-      </section>
+      </section> -->
 
       <footer id="footer">
         <div class="container-fluid">
@@ -366,10 +372,24 @@
         </div>
       </footer>
 
-      <script src="js/jquery-1.9.1.min.js"></script>
-      <script src="js/jquery-easing-1.3.min.js"></script>
-      <script src="js/bootstrap-3.3.4.min.js"></script>
-      <script src="js/wow-1.1.2.js"></script>
+      <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="img-responsive" />
+        		<p>
+        		    <br/>
+        		    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
+        		</p>
+        	</div>
+        </div>
+        </div>
+      </div>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
       <script src="js/main.js"></script>
     </body>
 </html>
