@@ -2,6 +2,7 @@
 <html>
     <head>
       <title>FireMaps - A tool for Forest Fire Observation</title>
+      <link rel="icon" href=img/logo/uyanbil-tab-logo.png>
       <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
       <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -14,9 +15,8 @@
       <header class="site-header">
           <nav class="left-nav">
               <a class="page-scroll" href="#about">About</a>
+              <a class="page-scroll" href="#products">Fire Products</a>
               <a class="page-scroll" href="#methodology">Methodology</a>
-              <a class="page-scroll" href="#products">Products</a>
-              <a class="page-scroll" href="#analysis">Analysis</a>
           </nav>
 
           <a href="/" class="site-logo">
@@ -24,9 +24,11 @@
           </a>
 
           <nav class="right-nav">
-              <a target="_blank" href="">TechPage</a>
-              <a target="_blank" href="">Archieve FireMap</a>
-              <a target="_blank" href="http://maps.itu.edu.tr/maps//firemap-realtime/en/">Near Realtive FireMap</a>
+              <a class="page-scroll" href="#help">Help</a>
+              <a target="_blank" href="">BBEurasia</a>
+              <a class="page-scroll" href="#analysis">Analysis</a>
+              <!-- <a target="_blank" href="">Archieve FireMap</a> -->
+              <!-- <a target="_blank" href="http://maps.itu.edu.tr/maps//firemap-realtime/en/">Near Realtive FireMap</a> -->
           </nav>
       </header>
 
@@ -62,7 +64,7 @@
                     <h5 class="padding-md-bottom">Your powerful Forest Fire monitoring <br>system for early warning.</h5>
 
                     <a href="http://maps.itu.edu.tr/maps//firemap-realtime/en/" class="btn std bg" target="_blank">Near Realtime FireMap</a>
-                    <a href="/contact" class="float-link">Contact Us &rsaquo;</a>
+                    <a href="contact/" class="float-link">Contact Us &rsaquo;</a>
             </div>
           </div>
         </div>
@@ -87,7 +89,7 @@
                         years and it is intended to increase as the spatial, spectral and temporal characteristics of the sensors are
                         constantly improving, as well as the techniques for the exploitation of satellite data.
                     </p>
-                    <a href="" class="btn btn-default btn-xl page-scroll wow fadeIn">Learn More Tech.</a>
+                    <a href="" class="btn btn-default btn-xl page-scroll wow fadeIn">Learn More</a>
                     <p><br></p>
                 </div>
             </div>
@@ -98,7 +100,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="margin-top-0 text-primary">Products</h2>
+                    <h2 class="margin-top-0 text-primary">Fire Products</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -135,8 +137,8 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/analysis/gallery1.png">
-                        <img src="img/analysis/gallery1.png" class="img-responsive" alt="Image 1">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/analysis/LSA SAF_aod_Antalya.gif">
+                        <img src="img/analysis/LSA SAF_aod_Antalya.gif" class="img-responsive" alt="Image 1">
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
@@ -147,8 +149,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/analysis/2010.png">
-                        <img src="img/analysis/2010.png" class="img-responsive" alt="Image 2">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="img/analysis/LSA_SAF_pm2.5_Antalya.gif">
+                        <img src="img/analysis/LSA_SAF_pm2.5_Antalya.gif" class="img-responsive" alt="Image 2">
                         <div class="gallery-box-caption">
                             <div class="gallery-box-content">
                                 <div>
@@ -293,11 +295,11 @@
         <p><br></p>
       </section>
 
-      <aside class="bg-dark">
+      <aside class="bg-dark" id="help">
         <div class="container text-center">
             <div class="call-to-action">
                 <h2 class="text-primary">Get Assistance</h2>
-                <a href="" target="ext" class="btn btn-default btn-lg wow flipInX">Say Hi!</a>
+                <a href="mailto:inquiries@uyanbil.com" target="ext" class="btn btn-default btn-lg wow flipInX">Help!</a>
             </div>
             <br>
             <hr/>
@@ -305,7 +307,7 @@
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
                     <div class="row">
-                        <h6 class="wide-space text-center">FIREMAPS ARE BASED ON THE FOLLOWING TECHNOLOGIES</h6>
+                        <h6 class="wide-space text-center">USED TECHNOLOGIES</h6>
                         <div class="col-sm-3 col-xs-6 text-center">
                             <i class="icon-lg ion-social-python" title="python"></i>
                         </div>
@@ -367,20 +369,20 @@
                 <div class="col-xs-6 col-sm-3 column">
                     <h4>Resources</h4>
                     <ul class="list-unstyled">
-                        <li><a href="">NASA</a></li>
-                        <li><a href="">EU Link</a></li>
-                        <li><a href="">Other Data</a></li>
-                        <li><a href="">More Data</a></li>
+                        <li><a href="https://firms.modaps.eosdis.nasa.gov/">FIRMS NASA</a></li>
+                        <li><a href="http://landsaf.meteo.pt/">LSA SAF</a></li>
+                        <li><a href="http://www.eumetsat.int/website/home/index.html">EUMETSAT</a></li>
+                        <li><a href="http://wfabba.ssec.wisc.edu/index.html">WFABBA</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-6 col-sm-3 column">
                     <h4>About</h4>
                     <ul class="list-unstyled">
                         <li><a href="#">Turkish Page</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="http://www.eies.itu.edu.tr/en/homepage">Contact EIES</a></li>
                         <li><a href="#">API</a></li>
-                        <li><a href="#">Istanbul Technical University</a></li>
-                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="http://www.itu.edu.tr/en/">Istanbul Technical University</a></li>
+                        <li><a href="privacy/">Terms &amp; Conditions</a></li>
                     </ul>
                 </div>
                 <!-- <div class="col-xs-12 col-sm-3 column">
@@ -404,7 +406,7 @@
                 </div> -->
             </div>
             <br/>
-            <span class="pull-right text-muted small"><a href="http://maps.itu.edu.tr/">Developed by Maps@ITU</a> &copy;2016 FireMaps</span>
+            <span class="pull-right text-muted small"><a href="http://maps.itu.edu.tr/">Developed by Maps@ITU</a> &copy;2016 Uyanbil</span>
         </div>
       </footer>
 
