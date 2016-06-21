@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
     <head>
-      <title>Uyanbil - A tool for Forest Fire Observation</title>
+      <title>Uyanbil - Satellite Fire Information System</title>
       <link rel="icon" href=../img/logo/uyanbil-tab-logo_noBG.png>
       <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
@@ -44,8 +44,8 @@
         <div class="container terms-and-privacy padding-xlg-top">
     <div class="row">
         <div class="col-md-6 col-md-offset-3 buffer-bottom">
-            <h2 class="text-center">Active Fire Products</h2>
-            <h5 class="text-center medium-grey">Fire Detection and Monitoring</h5>
+            <h2 class="text-center">Aktif Yang&#305;n &#199;ikti</h2>
+            <h5 class="text-center medium-grey">Yangin Tesbiti ve Izleme</h5>
             <!-- <p>Coming Soon!</p> -->
         </div>
     </div>
@@ -57,76 +57,63 @@
         </div> -->
         <div class="col-md-6 col-sm-6 summary">
             <!-- <h6><strong>Summary</strong></h6> -->
-            <p align="justify"><font size="4">S</font>atellite instruments can either detect the thermal emission during a
-              fire or the burnt area after. The latter are known as "burnt area", "burnt scar",
-              "burnt pixel" or "fire affected area", while the first products are referred to as
-              "hot spots", "active fires", "fire pixels" or "fire counts"
-              (<a href="http://link.aip.org/link/?APCPCS/1100/645/1" target="_blank">Kaiser et al., 2009</a>).</p>
-            <p align="justify">Active fire detection from satellites takes advantage of the fact that as target
-              temperature increases radiance increases faster at the shortwave end of the
-              spectrum when compared to the long-wave end. By using two atmospheric
-              window spectral channels, such as the 3.9 and 11&mu;m, fire locations and
-              characteristics can be determined
-              (<a href="http://fiesta.bren.ucsb.edu/~dozier/Pubs/DozierRSE1981.pdf" target="_blank">Dozier et al., 1981</a>).</p>
-            <div class="row">
-              <div class="col-sm-6 col-md-12">
-                <div class="thumbnail">
-                  <img src="lsaseviri.png" alt="...">
-                  <div class="caption">
-                    <p style="line-height:90%;" align="justify"><font size="2"><i>LSA SAF FRP-PIXEL (SEVIRI) Quality Flag map, in the red box the detection of a large fire in the Antalya province.</i></font></p>
-                  </div>
+            <p align="justify"><font size="4">U</font>ydu enstr&#252;manlar&#305; yang&#305;n s&#305;ras&#305;ndaki termal emisyonu ve
+              yang&#305;n sonras&#305; yanan alan&#305;n&#305;n tespit edilmesine olanak sa&#287;layan &#252;r&#252;nler olarak iki grupta
+              s&#305;n&#305;fland&#305;r&#305;labilir. Bunlardan ilkine ait &#252;r&#252;nler "s&#305;cak noktalar", "aktif yang&#305;nlar", "yang&#305;n
+              pikselleri(h&#252;creleri)" ya da "yang&#305;n say&#305;lar&#305;" olarak adland&#305;r&#305;l&#305;rken, di&#287;er s&#305;n&#305;fa ait &#252;r&#252;nler
+              ise "yanan alan", "yanan alan izi", "yanan alan pikseli" ya da "yang&#305;ndan etkilenen alan" olarak
+              adland&#305;r&#305;lmaktad&#305;r (<a href="http://link.aip.org/link/?APCPCS/1100/645/1">Kaiser ve ark., 2009</a>).</p>
+            <p align="justify">Uyduyla aktif yang&#305;n tespitinin avantaj&#305;, yang&#305;n s&#305;ras&#305;ndaki k&#305;sa dalga boyu
+              radyasyondaki art&#305;&#351;&#305;n&#305;n (uzun dalga boylu radyasyona oranla) hedef s&#305;cakl&#305;k art&#305;&#351;&#305;n&#305;ndan daha
+              h&#305;zl&#305; olmas&#305; ger&#231;e&#287;ini kullanabilmesidir. Atmosferik pencereler atmosferin k&#305;smi olarak ge&#231;irebildi&#287;i
+              enerjinin dalga boyu geni&#351;likleridir. &#304;ki atmosferik pencerenin spektral kanallar&#305; kullanarak, &#246;rne&#287;in,
+              elektromanyetik spektrumun 3.9 ve 11&mu;m dalga boyu kanallar&#305;na ait verilerin farklar&#305; kullan&#305;larak,
+              yang&#305;nlar&#305;n lokasyon ve karakterizasyonunu belirlemek m&#252;mk&#252;nd&#252;r
+              (<a href="http://fiesta.bren.ucsb.edu/~dozier/Pubs/DozierRSE1981.pdf">Dozier ve ark., 1981</a>).</p>
+            <p align="justify">Aktif yang&#305;n &#252;r&#252;nleri s&#305;cak noktan&#305;n lokasyonu ve yang&#305;n&#305;n yo&#287;unlu&#287;u -Yang&#305;n I&#351;&#305;n&#305;m
+              G&#252;c&#252; (FRP) olarak ifade edilir- gibi &#246;nemli parametreleri sa&#287;lamas&#305;n&#305;n yan&#305;s&#305;ra tespit edilen s&#305;cak
+              noktayla ilgili bilgi edinilebilecek bir g&#246;r&#252;nt&#252; sunar.</p>
+            <p align="justify">En yayg&#305;n kullan&#305;lan aktif yang&#305;n &#252;r&#252;nleri, y&#252;ksek  mekansal &#231;&#246;z&#252;n&#252;rl&#252;kleri ve k&#252;resel
+              &#246;l&#231;ekli olmalar&#305; sayesinde geleneksel olarak kutupsal y&#246;r&#252;ngeli uydu sens&#246;rleridir. Bu noktada,
+              <a href="https://firms.modaps.eosdis.nasa.gov/">MODIS yang&#305;n &#252;r&#252;n&#252;</a> birle&#351;tirilmi&#351; bir &#252;r&#252;n olup
+              k&#252;resel g&#246;zlem i&#231;in bir referans niteli&#287;indedir.</p>
+            <p align="justify">MODIS &#252;r&#252;n&#252;, g&#246;rece bulutsuz ko&#351;ullar alt&#305;nda ge&#231;ti&#287;i zaman pencerisinde  1 km piksel
+              i&#231;erisindeki yang&#305;nlar&#305; tespit edebilir. Ba&#287;lamsal algoritma kullan&#305;larak ger&#231;ekle&#351;tirilen bu i&#351;lemde
+              e&#351;ik de&#287;erler &#246;nce g&#246;zlemlenen orta-k&#305;z&#305;l&#246;tesi ve termal k&#305;z&#305;l&#246;tesi parlakl&#305;k s&#305;cakl&#305;&#287;&#305;na uygulan&#305;r
+              sonra da parlakl&#305;k s&#305;cakl&#305;&#287;&#305; kom&#351;u piksellerle kar&#351;&#305;la&#351;t&#305;r&#305;l&#305;p, incelenerek hatal&#305; tespitler &#231;&#305;kar&#305;lmaktad&#305;r
+              (<a href="http://www.nsstc.uah.edu/~naeger/references/journals/Sundar_Journal_Papers/2003_RSE_Giglio.pdf">Giglio ve ark. 2003</a>).</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+          <p align="justify">Yang&#305;n&#305;n tespit edilmesi, 1 km pikselin temsil etti&#287;i alan&#305;n tamam&#305;n&#305;n yang&#305;n alt&#305;nda oldu&#287;u anlam&#305;na
+            gelmesini gerektirmez. Yang&#305;n tespiti, piksel alan&#305;n&#305;n &#231;ok k&#252;&#231;&#252;k bir b&#246;l&#252;m&#252;n&#252; kaplayan yo&#287;un bir yang&#305;n
+            aktivitesi nedeniyle olabilece&#287;i gibi geni&#351; bir alanda ger&#231;ekle&#351;en yang&#305;n aktivitesi sonucunda da olabilmektedir.</p>
+          <div class="row">
+            <div class="col-sm-6 col-md-12">
+              <div class="thumbnail">
+                <img src="lsaseviri.png" alt="...">
+                <div class="caption">
+                  <p style="line-height:90%;" align="justify"><font size="2"><i>LSA SAF FRP-PIXEL (SEVIRI) Quality Flag map, in the red box the detection of a large fire in the Antalya province.</i></font></p>
                 </div>
               </div>
             </div>
-        </div>
-        <div class="col-md-6 col-sm-6 summary">
-            <!-- <h6><strong>Summary</strong></h6> -->
-            <p align="justify">Active fire product provides the location of a hot spot and the other important
-              fire parameters with a view to obtain relevant information on the detected hot
-              spot. Among these parameters is the fire's intensity, expressed in terms of
-              Fire Radiative Power<sup>1</sup>.</p>
-            <p align="justify">The most used active fire products have been traditionally based on
-              polar-orbiting sensor data, mainly thanks to their high spatial resolution and
-              acquisition at a global scale. And, at this moment, the
-              <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank">MODIS fire product</a>
-              is a consolidated product and a
-              reference for global Earth observation.</p>
-            <p align="justify">The MODIS product detects fires in 1km pixels that are burning at the time of
-              overpass under relatively cloud-free conditions using a contextual algorithm,
-              where thresholds are first applied to the observed middle-infrared and
-              thermal infrared brightness temperature and then false detections are rejected
-              by examining the brightness temperature relative to neighboring pixels
-              (<a href="http://www.nsstc.uah.edu/~naeger/references/journals/Sundar_Journal_Papers/2003_RSE_Giglio.pdf" target="_blank">Giglio, L. et al. 2003</a>).</p>
-            <p align="justify">A detected fire does not necessarily mean that the entire area represented by
-              the 1km pixel is on fire. A detection may be the result of intense fire activity
-              covering a small fraction of the pixel area or fire activity occurring over a
-              broader area. Fire detection omission/comission errors may occur due to input
-              data anomalies, limited satellite observation conditions, and/or potential
-              algorithm limitations.</p>
-            <p align="justify">The Visible Infrared Imaging Radiometer Suite (VIIRS) sensor was launched aboard
-              the Suomi National Polar-orbiting Partnership (NPP) satellite at the end of 2011 and
-              became operative in 2012. It provides similar measurements to MODIS at higher
-              resolution.</p>
-            <!-- <figure class="figure">
-              <img src="lsaseviri.png" class="figure-img img-fluid img-rounded" alt="lsa seviri">
-              <figcaption align="justify" class="figure-caption">A caption for the above image.</figcaption>
-            </figure> -->
-
-
+          </div>
+          <p align="justify">G&#246;r&#252;n&#252;r K&#305;z&#305;l&#246;tesi G&#246;r&#252;nt&#252;leme Radyometre Suiti (VIIRS) sens&#246;r&#252;, 2011 y&#305;l&#305; sonunda Finlandiya
+            Ulusal Kutupsal Y&#246;r&#252;nge Ortakl&#305;&#287;&#305; ile ba&#351;lat&#305;lm&#305;&#351; ve 2012 y&#305;l&#305;nda faal hale getirilmi&#351;tir. VIIRS sens&#246;r&#252;,
+            MODIS'e benzer daha y&#252;ksek &#231;&#246;z&#252;n&#252;rl&#252;kte &#246;l&#231;&#252;mler sa&#287;lamaktad&#305;r.</p>
         </div>
     </div>
     <div class="row padding-md-bottom">
         <div class="col-md-6 col-sm-6 summary">
             <!-- <h6><strong>Summary</strong></h6> -->
-            <p align="justify"><font size="4">N</font>ear real time fire detection and characterization products are available for MODIS and VIIRS:</p>
-            <ul>
-              <li><a href="https://earthdata.nasa.gov/data/near-real-time-data/firms" target="_blank">MODIS</a></li>
-              <li><a href="http://viirsfire.geog.umd.edu/" target="_blank">VIIRS</a></li>
-            </ul>
-            <p align="justify">But the most important limitation of polar satellite systems, with regard
-              to the needs of continuous and in-real- time monitoring of wildfires, is their
-              infrequent overpasses, varying inversely with the spatial resolution of the
-              sensor.</p>
+            <p align="justify"><font size="4">Y</font>ang&#305;n tespitindeki hata ve eksiklikler, girdi verilerindeki
+              anomaliler, s&#305;n&#305;rl&#305; uydu g&#246;zlem ko&#351;ullar&#305; ve/veya olas&#305; algoritma k&#305;s&#305;tlardan kaynaklan&#305;yor olabilir.
+              Kesintisiz ve ger&#231;ek zamanl&#305; yang&#305;n izleme ihtiyac&#305; a&#231;&#305;s&#305;ndan bakt&#305;&#287;&#305;m&#305;zda yine de, uydu sistemleriyle
+              ilgili en &#246;nemli k&#305;s&#305;t, sens&#246;rlerin mekansal &#231;&#246;z&#252;n&#252;rl&#252;kleriyle ters orantl&#305; de&#287;i&#351;en seyrek uydu
+              ge&#231;i&#351;lerlerine sahip olmas&#305;d&#305;r.</p>
+            <p align="justify">Asl&#305;nda y&#252;ksek zamansal &#231;&#246;z&#252;n&#252;rl&#252;k, yang&#305;nlar&#305;n erken tespiti (uydu tekrar &#252;zerinden
+              ge&#231;meden &#246;nce yang&#305;n &#231;&#305;kmas&#305; i&#231;in az zaman kalmas&#305;), k&#305;sa s&#252;reli yang&#305;nlar&#305;n tespiti (bir sonraki uydu
+              ge&#231;i&#351;inden &#246;nce yang&#305;n s&#246;nebilir), yang&#305;n geli&#351;iminin g&#246;r&#252;nt&#252; zaman serisi olarak takibi ve de&#287;i&#351;en
+              bulut ko&#351;ullar&#305; alt&#305;nda yang&#305;n&#305;n g&#246;zlemlenme imkan&#305;n&#305; artt&#305;rmas&#305; bak&#305;mlar&#305;ndan &#231;ok de&#287;erli ve gereklidir.</p>
             <div class="row">
               <div class="col-sm-6 col-md-12">
                 <div class="thumbnail">
@@ -139,17 +126,12 @@
                 </div>
               </div>
             </div>
-            <p align="justify">In fact high temporal resolution, is essential for early detection (less time for a
-              fire to burn before an overpass), detection of short-lived fires (a fire may
-              extinguish before an overpass takes place), tracking a fire's evolution over a
-              series of image times, and increasing the opportunities to see a fire under
-              changing cloud conditions.</p>
-            <p align="justify">In this respect only geostationary systems with their inherent high
-              temporal resolution can be helpful; the Spinning Enhanced Visible and
-              Infrared Imager (SEVIRI), on board the geostationary Meteosat Second
-              Generation (MSG) satellite, allows for observations over Europe every 15
-              minutes (or every 5 minutes in the Rapid Scanning Service mode at the
-              expense of coverage).</p>
+            <p align="justify">Bu ba&#287;lamda, sadece sabit y&#246;r&#252;ngeli uydu sistemleri y&#252;ksek zamansal  &#231;&#246;z&#252;n&#252;rl&#252;kl&#252;
+              tasar&#305;mlar&#305;yla en iyi imkanlar&#305; sunabilecek sistem olarak, Meteosat ikinci nesil (Meteosat Second Generation-MSG)
+              uydular&#305;ndan MSG-2 uydusu &#252;zerindeki SEVIRI (Spinning Enhanced Visible and Infrared Imager) sens&#246;r&#252;  kar&#351;&#305;m&#305;za
+              &#231;&#305;kmaktad&#305;r. 12 spektral kanalda 15 dakika s&#305;kl&#305;kla g&#246;r&#252;nt&#252; sa&#287;layabilen SEVIRI sens&#246;r&#252; yakla&#351;&#305;k 3km mekansal
+              &#231;&#246;z&#252;n&#252;rl&#252;&#287;e sahiptir. Avrupa &#252;zerindeki 15 dakikal&#305;k zamansal &#231;&#246;z&#252;n&#252;rl&#252;k, daha k&#252;&#231;&#252;k alanlar i&#231;in h&#305;zl&#305; tarama
+              servisi moduyla (Rapid Scanning Service) 5 dakikaya d&#252;&#351;&#252;r&#252;lebilmektedir.</p>
             <div class="row">
               <div class="col-sm-6 col-md-12">
                 <div class="thumbnail">
@@ -162,81 +144,48 @@
                 </div>
               </div>
             </div>
-            <p align="justify">Despite its coarse spatial resolution (~4 km over Southern Europe) recent
-              studies demonstrated that SEVIRI data can be used operationally to assist the
-              detection of fires by improving the reliability in fire announcements
-              (<a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=1704963&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D1704963" target="_blank">Laneve &amp; Cadau, 2006</a>;
-              <a href="http://www.eumetsat.int/website/wcm/idc/idcplg?IdcService=GET_FILE&amp;dDocName=PDF_CONF_P_S1_10_STOYANOV_P&amp;RevisionSelectionMethod=LatestReleased&amp;Rendition=Web" target="_blank">Georgiev &amp; Stoyanova, 2013</a>)
-              and allowing real time fire front monitoring in
-              the Mediterranean region. The role of SEVIRI is especially useful as the fires
-              increase in number and size
-              (<a href="http://www.mdpi.com/2072-4292/3/3/524" target="_blank">Sifakis et al. 2011</a>).</p>
-
         </div>
         <div class="col-md-6 col-sm-6 summary">
-            <!-- <h6><strong>Summary</strong></h6> -->
-            <p align="justify">Since the launch of Meteosat Second Generation in 2002, a number of
-              studies have used different algorithms to study active fires with SEVIRI observations
-              (e.g. <a href="http://www.tandfonline.com/doi/abs/10.1080/01431160802609726" target="_blank">Calle et al., 2009</a>;
-              <a href="http://www.cabdirect.org/abstracts/20103099954.html;jsessionid=54E0609463A3F4E5BCA2F27485D6F04D" target="_blank">Amraoui et al., 2010</a>).
-              This has led to certain other routinely
-              generated SEVIRI active fire products being available. These SEVIRI-based
-              products include:</p>
-            <ul>
-              <li>the Wildfire Automated Biomass Burning Algorithm
-                (<a href="http://wfabba.ssec.wisc.edu/" target="_blank">WFABBA</a>, version 6.5)
-                product (based on the WFABBA fire detection algorithm of
-                <a href="http://queimadas.cptec.inpe.br/~rqueimadas/material3os/1998_Prins_etal_Overview_JGR_DE3os.pdf" target="_blank">Prins et al., 1998</a>.
-                </li>
-              <li>the
-                LSA SAF <a href="http://landsaf.meteo.pt/algorithms.jsp?seltab=11&amp;starttab=11" target="_blank">Fire Radiative Power</a> - Pixel product based on the geostationary
-                Fire Thermal Anomaly (FTA) active fire detection algorithm of
-                <a href="https://kclpure.kcl.ac.uk/portal/en/publications/fire-detection-and-fire-characterization-over-africa-using-meteosat-seviri%289ed54a69-f808-47ea-93a1-35c0bd7a0513%29/export.html" target="_blank">Roberts and Wooster (2008)</a>.</li>
-              <li>the <a href="http://www.eumetsat.int/website/home/Data/Products/Land/index.html" target="_blank">Active Fire Monitoring</a> (FIR)
-                product (<a href="https://www.eumetsat.int/cs/idcplg?IdcService=GET_FILE&amp;dDocName=pdf_conf_p_s8_47_joro_v&amp;allowInterrupt=1&amp;noSaveAs=1&amp;RevisionSelectionMethod=LatestReleased" target="_blank">Joro et al., 2008)</a>.</li>
-              <li>the <a href="http://landsaf.meteo.pt/algorithms.jsp?seltab=13&amp;starttab=13" target="_blank">Fire Detection and Monitoring</a>
-                (FDeM) product (<a href="http://www.cabdirect.org/abstracts/20103099954.html" target="_blank">Amraoui et al., 2010</a>).</li>
-            </ul>
-            <p align="justify">Generally the mentioned SEVIRI based fire products produce two main outputs:</p>
-            <ul>
-              <li>Fire mask indicating where fire detection is not possible: opaque cloud
-                  coverage; block-out zones due to solar reflectance, clouds, extreme view
-                  angles, biome type, bad data, etc.</li>
-              <li>Fire list with main information characterizing the detected hot spot:
-                <ul>
-                  <li>latitude; longitude;</li>
-                  <li>satellite view angle;</li>
-                  <li>pixel size;</li>
-                  <li>observed 4 and 11&mu;m brightness temperatures;</li>
-                  <li>biome type;</li>
-                  <li>fire confidence flag;</li>
-                  <li>instantaneous estimates of fire radiative power (FRP);</li>
-                </ul>
-              </li>
-            </ul>
-            <div class="row">
-              <div class="col-sm-6 col-md-12">
-                <div class="thumbnail">
-                  <img src="mersin.png" alt="...">
-                  <div class="caption">
-                    <p style="line-height:90%;" align="justify"><font size="2"><i>Large fire observed over Mersin
-                      during summer 2008 with SEVIRI (LSA SAF) and MODIS (FIRMS) based active fire products. MODIS
-                      burnt area is also depicted.</i></font></p>
-                  </div>
+          <p align="justify">G&#252;ncel &#231;al&#305;&#351;malar
+          (<a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=1704963&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D1704963">Laneve &amp; Cadau, 2006</a>;
+          <a href="http://www.eumetsat.int/website/wcm/idc/idcplg?IdcService=GET_FILE&dDocName=PDF_CONF_P_S1_10_STOYANOV_P&RevisionSelectionMethod=LatestReleased&Rendition=Web">Georgiev &amp; Stoyanova, 2013</a>)
+          g&#246;stermi&#351;tir ki SEVIRI verisi, kaba mekansal &#231;&#246;z&#252;n&#252;rl&#252;&#287;&#252;ne ra&#287;men (G&#252;ney avrupa &#252;zerinde yakla&#351;&#305;k 4km), yang&#305;n
+          tespitinin g&#252;venirlili&#287;inin geli&#351;tirimesine operasyonel olarak katk&#305; sa&#287;lamakta ve Akdeniz b&#246;lgesi i&#231;in ger&#231;ek
+          zamanl&#305; yang&#305;n izlemeye olanak sa&#287;lamaktad&#305;r. SEVIRI'nin ne kadar faydal&#305; oldu&#287;u, &#246;zellikle yang&#305;nlar&#305;n say&#305;s&#305;
+          ve b&#252;y&#252;kl&#252;&#287;&#252; artt&#305;k&#231;a ortaya &#231;&#305;kmaktad&#305;r
+          (<a href="http://www.mdpi.com/2072-4292/3/3/524">Sifakis ve ark. 2011</a>).</p>
+          <p align="justify">Meteosat ikinci nesil uydular&#305; 2002'de kullan&#305;lmaya ba&#351;lad&#305;&#287;&#305;ndan bu yana pek &#231;ok  ara&#351;t&#305;rma,
+            aktif yang&#305;nlar&#305; SEVIRI g&#246;zlemleriyle farkl&#305; algoritmalar kullanarak incelemi&#351;lerdir
+            (<a href="http://www.tandfonline.com/doi/abs/10.1080/01431160802609726">&#246;rne&#287;in, Calle ve ark., 2009</a>;
+            <a href="http://www.cabdirect.org/abstracts/20103099954.html;jsessionid=54E0609463A3F4E5BCA2F27485D6F04D">Amraoui ve ark., 2010</a>).
+            Bu durum, d&#252;zenli olarak olarak SEVIRI aktif yang&#305;n &#252;r&#252;nleri (LSA SAF-yang&#305;n &#305;&#351;&#305;n&#305;m g&#252;c&#252; ve FdeM-yang&#305;n tespit
+            ve izleme &#252;r&#252;n&#252; gibi) geli&#351;tirilmesini sa&#287;lam&#305;&#351;t&#305;r.</p>
+          <p align="justify">SEVIRI aktif yang&#305;n &#252;r&#252;nlerinden genel olarak, yang&#305;n maskelemesi ve yang&#305;n listelemesi olmak
+            &#252;zere iki temel &#231;&#305;kt&#305; elde edilmektedir. Yang&#305;n maskelemesi, nelerde yang&#305;n tespit edilemeyece&#287;i bilgisini
+            vermektedir. Bu verinin opak bulut b&#246;l&#252;m&#252;n&#252;, solar yans&#305;madan bloke olmu&#351; alanlar&#305;, bulutlar, ekstrem g&#246;r&#252;&#351;
+            a&#231;&#305;lar&#305;, ve hatal&#305; veri gibi k&#305;s&#305;mlar&#305;n&#305;n tutuldu&#287;u yerdir. Yang&#305;n listelemesi ise yang&#305;n s&#305;cak noktas&#305;n&#305;
+            karakterize edecek ana bilgilerin tutuldu&#287;u yerdir. Yang&#305;n listelemesinde; koordinat verisi (enlem, boylam),
+            uydunun g&#246;r&#252;&#351; a&#231;&#305;s&#305;, piksel say&#305;s&#305;, 4 ve 11&mu;m parlakl&#305;kta g&#246;zlenen s&#305;cakl&#305;klar, biyom tipleri, yang&#305;n g&#252;ven
+            bayra&#287;&#305;/i&#351;areti/uyar&#305;s&#305; ve anl&#305;k FRP (yang&#305;n aktif &#305;&#351;&#305;n&#305;m) tahmini parametreleri yer almaktad&#305;r.</p>
+          <div class="row">
+            <div class="col-sm-6 col-md-12">
+              <div class="thumbnail">
+                <img src="mersin.png" alt="...">
+                <div class="caption">
+                  <p style="line-height:90%;" align="justify"><font size="2"><i>Large fire observed over Mersin
+                    during summer 2008 with SEVIRI (LSA SAF) and MODIS (FIRMS) based active fire products. MODIS
+                    burnt area is also depicted.</i></font></p>
                 </div>
               </div>
             </div>
-            <p align="justify">Since the threshold of detectability of a fire is not only dependent on the
-              instrument but also a function of the pixel area, geostationary sensors have a
-              higher minimum FRP detection limit (typically &gt; 40MW) than polar orbit
-              instruments (e.g. ~8MW for MODIS). They therefore do not observe the
-              lowest FRP component of the fire regime (
-              <a herf="http://www.kcl.ac.uk/sspp/departments/geography/people/academic/wooster/19.pdf" target="_blank">Roberts et al., 2005</a>;
-              <a href="http://onlinelibrary.wiley.com/store/10.1002/2013GL059086/asset/grl51467.pdf?v=1&amp;t=ipob0qon&amp;s=de2faea64530c6d56ee6033902529883e7f77784" target="_blank">Freeborn et al., 2014</a></p>
-            <br>
-            <p style="line-height:90%;" align="justify"><font size="1"><sup>1</sup> Fire Radiative Power (FRP) is a measure of the radiant energy liberated per unit
-              time from burning vegetation via the rapid oxidation of fuel carbon and hydrogen. It is the best satellite
-              based indicator of the energy of the fire and its growth potential.</font></p>
+          </div>
+          <p align="justify">Yang&#305;n&#305;n tespit edilebilme e&#351;i&#287;i sadece enstr&#252;mana de&#287;il ayn&#305; zamanda piksel alan&#305;na da ba&#287;l&#305;
+            oldu&#287;undan, sabit y&#246;r&#252;ngeli uydular (tipik FRP > 40 MW) kutupsal y&#246;r&#252;ngeli uydu enstr&#252;manlar&#305;ndan
+            (&#246;rne&#287;in 8 MW, MODIS) daha fazla minimum FRP tespit limitine sahiptirler.  Bu nedenle yang&#305;n rejimine ait en
+            d&#252;&#351;&#252;k FRP bile&#351;enini g&#246;zlemleyemezler
+            (<a href="http://www.kcl.ac.uk/sspp/departments/geography/people/academic/wooster/19.pdf">Roberts ve ark., 2005</a>;
+            <a href="http://onlinelibrary.wiley.com/store/10.1002/2013GL059086/asset/grl51467.pdf?v=1&t=ipob0qon&s=de2faea64530c6d56ee6033902529883e7f77784">Freeborn ve ark., 2014</a>).</p>
+
         </div>
     </div>
     <!-- <div class="row padding-md-bottom">
