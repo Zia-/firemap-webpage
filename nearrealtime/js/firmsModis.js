@@ -1,5 +1,5 @@
 // Load modis c6 data --------------------------------------------
-var firmsModisc6Realurl = "http://maps.itu.edu.tr/maps/realdata-geojson/modis_c6/MODIS_C6_Global_24h_turkeyFiltered.geojson"
+var firmsModisc6Realurl = "http://cbs.itu.edu.tr/uyanbil/js/realdata-geojson/modis_c6/MODIS_C6_Global_24h_turkeyFiltered.geojson"
 
 // Create modis c6 featureLayer
 var firmsModisc6FeatureLayer = L.mapbox.featureLayer(firmsModisc6Realurl, {

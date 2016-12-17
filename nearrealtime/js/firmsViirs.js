@@ -1,5 +1,5 @@
 // Load viirs data --------------------------------------------
-var firmsViirsRealurl = "http://maps.itu.edu.tr/maps/realdata-geojson/viirs/VNP14IMGTDL_NRT_Global_24h_turkeyFiltered.geojson"
+var firmsViirsRealurl = "http://cbs.itu.edu.tr/uyanbil/js/realdata-geojson/viirs/VNP14IMGTDL_NRT_Global_24h_turkeyFiltered.geojson"
 
 // Create viirs featureLayer
 var firmsViirsFeatureLayer = L.mapbox.featureLayer(firmsViirsRealurl, {
