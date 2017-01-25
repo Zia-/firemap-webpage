@@ -1,0 +1,490 @@
+
+<!doctype html>
+<html>
+    <head>
+      <title>Uyanbil - Satellite Fire Information System</title>
+      <link rel="icon" href=../img/logo/uyanbil-tab-logo_noBG.png>
+      <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+      <!-- http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css -->
+      <link rel="stylesheet" type="text/css" href="../css/main.css">
+    </head>
+    <body>
+      <header class="site-header">
+          <nav class="left-nav">
+              <a class="page-scroll" href="../">Home</a>
+          </nav>
+
+          <a href="/" class="site-logo">
+              <img src="../img/logo/uyanbil-logo.svg" alt="Uyanbil">
+          </a>
+
+          <nav class="left-nav">
+          </nav>
+      </header>
+
+      <header class="mobile-header">
+          <div class="close"></div>
+          <a href="/" class="mobile-logo">
+              <img src="../img/logo/uyanbil-mobile-logo.svg" alt="Uyanbil">
+          </a>
+          <a href="/" class="full-logo">
+              <img src="../img/logo/uyanbil-logo.svg" alt="Uyanbil">
+          </a>
+          <div class="show-mobile-menu">
+              <img src="../img/logo/mobile-menu.svg" alt="menu">
+          </div>
+          <nav class="mobile-nav padding-md-top">
+              <a class="page-scroll" href="../">Home</a>
+          </nav>
+      </header>
+
+        <div class="container terms-and-privacy padding-xlg-top">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 buffer-bottom">
+            <h2 class="text-center">Active Fire Products</h2>
+            <h5 class="text-center medium-grey">Fire Detection and Monitoring</h5>
+            <!-- <p>Coming Soon!</p> -->
+        </div>
+    </div>
+    <div class="row padding-xlg-top padding-md-bottom">
+        <!-- <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>1. Application</strong></h6>
+            <p>Our privacy policy (the “Privacy Policy”) describes how UrtheCast Corp. and its affiliates(“us”, “we” or “our”) collect and use your (“you” or “your”) information through a variety of means. By visiting UrtheCast.com (the “Site”) or using the services available through the Site (the “Services” and together with the Site, the “UrtheCast Community”), or otherwise using or engaging with our products, services or attending our events, you are agreeing to the Privacy Policy.</p>
+            <p>A summary is provided on the right side of these Terms but it is not legally binding, so be sure to read the full Privacy Policy</p>
+        </div> -->
+        <div class="col-md-6 col-sm-6 summary">
+            <!-- <h6><strong>Summary</strong></h6> -->
+            <p align="justify"><font size="4">S</font>atellite instruments can either detect the thermal emission during a
+              fire or the burnt area after. The latter are known as "burnt area", "burnt scar",
+              "burnt pixel" or "fire affected area", while the first products are referred to as
+              "hot spots", "active fires", "fire pixels" or "fire counts"
+              (<a href="http://link.aip.org/link/?APCPCS/1100/645/1" target="_blank">Kaiser et al., 2009</a>).</p>
+            <p align="justify">Active fire detection from satellites takes advantage of the fact that as target
+              temperature increases radiance increases faster at the shortwave end of the
+              spectrum when compared to the long-wave end. By using two atmospheric
+              window spectral channels, such as the 3.9 and 11&mu;m, fire locations and
+              characteristics can be determined
+              (<a href="http://fiesta.bren.ucsb.edu/~dozier/Pubs/DozierRSE1981.pdf" target="_blank">Dozier et al., 1981</a>).</p>
+            <div class="row">
+              <div class="col-sm-6 col-md-12">
+                <div class="thumbnail">
+                  <img src="lsaseviri.png" alt="...">
+                  <div class="caption">
+                    <p style="line-height:90%;" align="justify"><font size="2"><i>LSA SAF FRP-PIXEL (SEVIRI) Quality Flag map, in the red box the detection of a large fire in the Antalya province.</i></font></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <!-- <h6><strong>Summary</strong></h6> -->
+            <p align="justify">Active fire product provides the location of a hot spot and the other important
+              fire parameters with a view to obtain relevant information on the detected hot
+              spot. Among these parameters is the fire's intensity, expressed in terms of
+              Fire Radiative Power<sup>1</sup>.</p>
+            <p align="justify">The most used active fire products have been traditionally based on
+              polar-orbiting sensor data, mainly thanks to their high spatial resolution and
+              acquisition at a global scale. And, at this moment, the
+              <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank">MODIS fire product</a>
+              is a consolidated product and a
+              reference for global Earth observation.</p>
+            <p align="justify">The MODIS product detects fires in 1km pixels that are burning at the time of
+              overpass under relatively cloud-free conditions using a contextual algorithm,
+              where thresholds are first applied to the observed middle-infrared and
+              thermal infrared brightness temperature and then false detections are rejected
+              by examining the brightness temperature relative to neighboring pixels
+              (<a href="http://www.nsstc.uah.edu/~naeger/references/journals/Sundar_Journal_Papers/2003_RSE_Giglio.pdf" target="_blank">Giglio, L. et al. 2003</a>).</p>
+            <p align="justify">A detected fire does not necessarily mean that the entire area represented by
+              the 1km pixel is on fire. A detection may be the result of intense fire activity
+              covering a small fraction of the pixel area or fire activity occurring over a
+              broader area. Fire detection omission/comission errors may occur due to input
+              data anomalies, limited satellite observation conditions, and/or potential
+              algorithm limitations.</p>
+            <p align="justify">The Visible Infrared Imaging Radiometer Suite (VIIRS) sensor was launched aboard
+              the Suomi National Polar-orbiting Partnership (NPP) satellite at the end of 2011 and
+              became operative in 2012. It provides similar measurements to MODIS at higher
+              resolution.</p>
+            <!-- <figure class="figure">
+              <img src="lsaseviri.png" class="figure-img img-fluid img-rounded" alt="lsa seviri">
+              <figcaption align="justify" class="figure-caption">A caption for the above image.</figcaption>
+            </figure> -->
+
+
+        </div>
+    </div>
+    <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 summary">
+            <!-- <h6><strong>Summary</strong></h6> -->
+            <p align="justify"><font size="4">N</font>ear real time fire detection and characterization products are available for MODIS and VIIRS:</p>
+            <ul>
+              <li><a href="https://earthdata.nasa.gov/data/near-real-time-data/firms" target="_blank">MODIS</a></li>
+              <li><a href="http://viirsfire.geog.umd.edu/" target="_blank">VIIRS</a></li>
+            </ul>
+            <p align="justify">But the most important limitation of polar satellite systems, with regard
+              to the needs of continuous and in-real- time monitoring of wildfires, is their
+              infrequent overpasses, varying inversely with the spatial resolution of the
+              sensor.</p>
+            <div class="row">
+              <div class="col-sm-6 col-md-12">
+                <div class="thumbnail">
+                  <img src="lsasevirianother.png" alt="...">
+                  <div class="caption">
+                    <p style="line-height:90%;" align="justify"><font size="2"><i>LSA SAF FRP-PIXEL (SEVIRI)
+                      Quality Flag map in the red box surrounding the Antalya fire (see Fig. above). And respective
+                      FRP estimated over the pixels flagged as potential fires (FRP OK).</i></font></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p align="justify">In fact high temporal resolution, is essential for early detection (less time for a
+              fire to burn before an overpass), detection of short-lived fires (a fire may
+              extinguish before an overpass takes place), tracking a fire's evolution over a
+              series of image times, and increasing the opportunities to see a fire under
+              changing cloud conditions.</p>
+            <p align="justify">In this respect only geostationary systems with their inherent high
+              temporal resolution can be helpful; the Spinning Enhanced Visible and
+              Infrared Imager (SEVIRI), on board the geostationary Meteosat Second
+              Generation (MSG) satellite, allows for observations over Europe every 15
+              minutes (or every 5 minutes in the Rapid Scanning Service mode at the
+              expense of coverage).</p>
+            <div class="row">
+              <div class="col-sm-6 col-md-12">
+                <div class="thumbnail">
+                  <img src="antalya.png" alt="...">
+                  <div class="caption">
+                    <p style="line-height:90%;" align="justify"><font size="2"><i>Large fire observed over Antalya
+                      during summer 2008 with SEVIRI (LSA SAF) and MODIS (FIRMS) based active fire products. MODIS
+                      burnt area is also depicted.</i></font></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p align="justify">Despite its coarse spatial resolution (~4 km over Southern Europe) recent
+              studies demonstrated that SEVIRI data can be used operationally to assist the
+              detection of fires by improving the reliability in fire announcements
+              (<a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&amp;arnumber=1704963&amp;url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D1704963" target="_blank">Laneve &amp; Cadau, 2006</a>;
+              <a href="http://www.eumetsat.int/website/wcm/idc/idcplg?IdcService=GET_FILE&amp;dDocName=PDF_CONF_P_S1_10_STOYANOV_P&amp;RevisionSelectionMethod=LatestReleased&amp;Rendition=Web" target="_blank">Georgiev &amp; Stoyanova, 2013</a>)
+              and allowing real time fire front monitoring in
+              the Mediterranean region. The role of SEVIRI is especially useful as the fires
+              increase in number and size
+              (<a href="http://www.mdpi.com/2072-4292/3/3/524" target="_blank">Sifakis et al. 2011</a>).</p>
+
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <!-- <h6><strong>Summary</strong></h6> -->
+            <p align="justify">Since the launch of Meteosat Second Generation in 2002, a number of
+              studies have used different algorithms to study active fires with SEVIRI observations
+              (e.g. <a href="http://www.tandfonline.com/doi/abs/10.1080/01431160802609726" target="_blank">Calle et al., 2009</a>;
+              <a href="http://www.cabdirect.org/abstracts/20103099954.html;jsessionid=54E0609463A3F4E5BCA2F27485D6F04D" target="_blank">Amraoui et al., 2010</a>).
+              This has led to certain other routinely
+              generated SEVIRI active fire products being available. These SEVIRI-based
+              products include:</p>
+            <ul>
+              <li>the Wildfire Automated Biomass Burning Algorithm
+                (<a href="http://wfabba.ssec.wisc.edu/" target="_blank">WFABBA</a>, version 6.5)
+                product (based on the WFABBA fire detection algorithm of
+                <a href="http://queimadas.cptec.inpe.br/~rqueimadas/material3os/1998_Prins_etal_Overview_JGR_DE3os.pdf" target="_blank">Prins et al., 1998</a>.
+                </li>
+              <li>the
+                LSA SAF <a href="http://landsaf.meteo.pt/algorithms.jsp?seltab=11&amp;starttab=11" target="_blank">Fire Radiative Power</a> - Pixel product based on the geostationary
+                Fire Thermal Anomaly (FTA) active fire detection algorithm of
+                <a href="https://kclpure.kcl.ac.uk/portal/en/publications/fire-detection-and-fire-characterization-over-africa-using-meteosat-seviri%289ed54a69-f808-47ea-93a1-35c0bd7a0513%29/export.html" target="_blank">Roberts and Wooster (2008)</a>.</li>
+              <li>the <a href="http://www.eumetsat.int/website/home/Data/Products/Land/index.html" target="_blank">Active Fire Monitoring</a> (FIR)
+                product (<a href="https://www.eumetsat.int/cs/idcplg?IdcService=GET_FILE&amp;dDocName=pdf_conf_p_s8_47_joro_v&amp;allowInterrupt=1&amp;noSaveAs=1&amp;RevisionSelectionMethod=LatestReleased" target="_blank">Joro et al., 2008)</a>.</li>
+              <li>the <a href="http://landsaf.meteo.pt/algorithms.jsp?seltab=13&amp;starttab=13" target="_blank">Fire Detection and Monitoring</a>
+                (FDeM) product (<a href="http://www.cabdirect.org/abstracts/20103099954.html" target="_blank">Amraoui et al., 2010</a>).</li>
+            </ul>
+            <p align="justify">Generally the mentioned SEVIRI based fire products produce two main outputs:</p>
+            <ul>
+              <li>Fire mask indicating where fire detection is not possible: opaque cloud
+                  coverage; block-out zones due to solar reflectance, clouds, extreme view
+                  angles, biome type, bad data, etc.</li>
+              <li>Fire list with main information characterizing the detected hot spot:
+                <ul>
+                  <li>latitude; longitude;</li>
+                  <li>satellite view angle;</li>
+                  <li>pixel size;</li>
+                  <li>observed 4 and 11&mu;m brightness temperatures;</li>
+                  <li>biome type;</li>
+                  <li>fire confidence flag;</li>
+                  <li>instantaneous estimates of fire radiative power (FRP);</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="row">
+              <div class="col-sm-6 col-md-12">
+                <div class="thumbnail">
+                  <img src="mersin.png" alt="...">
+                  <div class="caption">
+                    <p style="line-height:90%;" align="justify"><font size="2"><i>Large fire observed over Mersin
+                      during summer 2008 with SEVIRI (LSA SAF) and MODIS (FIRMS) based active fire products. MODIS
+                      burnt area is also depicted.</i></font></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p align="justify">Since the threshold of detectability of a fire is not only dependent on the
+              instrument but also a function of the pixel area, geostationary sensors have a
+              higher minimum FRP detection limit (typically &gt; 40MW) than polar orbit
+              instruments (e.g. ~8MW for MODIS). They therefore do not observe the
+              lowest FRP component of the fire regime (
+              <a herf="http://www.kcl.ac.uk/sspp/departments/geography/people/academic/wooster/19.pdf" target="_blank">Roberts et al., 2005</a>;
+              <a href="http://onlinelibrary.wiley.com/store/10.1002/2013GL059086/asset/grl51467.pdf?v=1&amp;t=ipob0qon&amp;s=de2faea64530c6d56ee6033902529883e7f77784" target="_blank">Freeborn et al., 2014</a></p>
+            <br>
+            <p style="line-height:90%;" align="justify"><font size="1"><sup>1</sup> Fire Radiative Power (FRP) is a measure of the radiant energy liberated per unit
+              time from burning vegetation via the rapid oxidation of fuel carbon and hydrogen. It is the best satellite
+              based indicator of the energy of the fire and its growth potential.</font></p>
+        </div>
+    </div>
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>3. Using Information</strong></h6>
+            <p>We may use your information to enhance,
+            customize and personalize your UrtheCast
+            Community experiences and communications.
+            We may also use your information to help
+            operate, provide, improve and maintain the
+            UrtheCast Community, including analyzing user
+            behavior and trends. As well, we may send you
+            administrative messages or other information
+            about the UrtheCast Community. If you have
+            opted-in, we may use your information to
+            communicate with you about our products,
+            services and events. We may also use your
+            personal information to display relevant
+            marketing to you.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>We may use your information to keep the UrtheCast
+            Community customized for your
+            use and to improve and maintain the
+            UrtheCast Community. If you have let us
+            know that you are okay with us being in
+            contact with you (opted-in), we may contact
+            you using your personal information.</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>4. Sharing Information</strong></h6>
+            <p>We may provide your information to our affiliates
+            or service providers if it is necessary to conduct
+            our business. For example, service providers
+            may handle data management, email
+            distribution, market research, information
+            analysis, and promotions management. We may
+            also share your information to administer
+            features (e.g. graphic or data downloads or other
+            interactive functionality).</p>
+            <p>We may also disclose information if we need to
+            by law, to enforce our policies, or to protect our
+            or others' rights, property or safety. We may
+            share information to prevent illegal uses of our
+            products and services or violations of our terms
+            of service (the “Terms”)
+            <a href="https://www.urthecast.com/company/terms">https://www.urthecast.com/company/terms</a>,
+            or to defend ourselves against third-party claims.
+            We may also share information with companies
+            assisting in fraud protection or investigation.</p>
+            <p>As well, if we sell our business or a part of it, we
+            may share your information with the buyer. If this
+            should happen, we will give you notice by
+            posting to the website or some other form of
+            communication.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>We may share your information with other
+            companies in the UrtheCast family or our
+            service providers if they need it to deliver our
+            services.</p>
+            <p>We may also share your information if we
+            think that we are required to by law or if our
+            business is purchased.</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>5. Sharing You Choose</strong></h6>
+            <p>In orer to participate in certain features of the UrtheCast
+            Community, you may choose to share personal information, including but not limited to,
+            your name, zip/postal code and email. You may
+            also choose to share your activity on other
+            platforms, such as Facebook and Twitter. Please
+            read the privacy policies of those platforms,
+            because your UrtheCast Community activity
+            published on those platforms will no longer be
+            governed by this Privacy Policy (and will be
+            governed by the privacy policy of the platform).</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>If you choose to share your UrtheCast
+            activity on other platforms, this privacy
+            policy will not apply (and theirs will).</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>6. Changes to This Privacy Policy</strong></h6>
+            <p>Our services and promotions will change over
+            time. This Privacy Policy will be updated
+            periodically to reflect those changes and
+            corresponding changes in our information
+            practices. Whenever we revise this Privacy
+            Policy, we will change the date on the Privacy
+            Policy to indicate when the revisions were made.
+            By using the UrtheCast Community, you agree to
+            accept the terms of the Privacy Policy as stated
+            at the time you use it. Any future access to the
+            UrtheCast Community after the posting of a
+            revised Privacy Policy will be deemed to be your
+            acceptance of the revised Privacy Policy.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>The Privacy Policy can change. Please
+            remember to check back here every so often
+            to see about any changes.</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>7. Other Sites and Links</strong></h6>
+            <p>The UrtheCast Community may contain links to
+            other websites that operate independently of us
+            and are not under our control. We provide links
+            to other websites solely for your convenience
+            and information. Other websites may have their
+            own privacy notices, which we suggest you
+            review if you visit any linked websites. We are
+            not responsible for information that is provided
+            by, or collected through, those websites or for
+            any other use of those websites.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>Any links to other websites are only for your
+            convenience. Those sites will be governed by
+            their own terms and privacy policy (not ours).</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>8. Communication / Unsubscribe / Opt-Out</strong></h6>
+            <p>If you have opted-in, we may send you service related communications. To unsubscribe and
+            stop receiving messages, please change your
+            settings or follow the instructions in the email,
+            text message, notification or other message
+            type. If you have unsubscribed from any of our
+            communications, due to production schedules,
+            you may receive communications already in
+            production.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>You can opt out of communications from us at any time
+            using the unsubscribe mechanism in the message we send.</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>9. Terms of Service</strong></h6>
+            <p>Your use of the UrtheCast Community is subject
+            to this Privacy Policy as well as our Terms of
+            Service <a href="https://www.urthecast.com/company/terms">https://www.urthecast.com/company/terms</a>
+            </p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>Our Terms of Service also apply.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center padding-sm-top padding-lg-bottom">
+                <a href="mailto:inquiries@uyanbil.com" class="btn std">inquiries@uyanbil.com</a>
+            </div>
+        </div>
+      </div>
+    </div> -->
+
+    <footer id="footer">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 column">
+                <h4>Resources</h4>
+                <ul class="list-unstyled">
+                    <li><a target="_blank" href="https://firms.modaps.eosdis.nasa.gov/">FIRMS NASA</a></li>
+                    <li><a target="_blank" href="http://landsaf.meteo.pt/">LSA SAF</a></li>
+                    <li><a target="_blank" href="http://www.eumetsat.int/website/home/index.html">EUMETSAT</a></li>
+                    <li><a target="_blank" href="http://wfabba.ssec.wisc.edu/index.html">WFABBA</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 column">
+                <h4>About</h4>
+                <ul class="list-unstyled">
+                    <!--<li><a href="#">Turkish Page</a></li>-->
+                    <li><a target="_blank" href="http://www.eies.itu.edu.tr/en/homepage">Contact EIES</a></li>
+                    <li><a disabled style="cursor: default;">API</a></li>
+                    <li><a target="_blank" href="http://www.itu.edu.tr/en/">Istanbul Technical University</a></li>
+                    <li><a href="../privacy/">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+              <!-- <div class="col-xs-12 col-sm-3 column">
+                  <h4>Stay Posted</h4>
+                  <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
+                      </div>
+                      <div class="form-group">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
+                      </div>
+                  </form>
+              </div> -->
+              <!-- <div class="col-xs-12 col-sm-3 text-right">
+                  <h4>Follow</h4>
+                  <ul class="list-inline">
+                    <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
+                    <li><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>
+                    <li><a rel="nofollow" href="" title="Dribble"><i class="icon-lg ion-social-dribbble-outline"></i></a></li>
+                  </ul>
+              </div> -->
+          </div>
+          <br/>
+          <span class="pull-right text-muted small"><a href="http://maps.itu.edu.tr/">Developed by Maps@ITU</a> &copy;2016 Uyanbil</span>
+      </div>
+    </footer>
+
+        <!-- <div class="hidden unsupported-browser-overlay" id="unsupported-browser-overlay">
+            <div class="content">
+                <h4 class="modal-title">You are browsing with an unsupported browser.</h4>
+                <p>We're sorry, but the version of Internet Explorer you're using is not supported by the UrtheCast web site.</p>
+                <p>We highly recommend you upgrade to a more recent version of Internet Explorer, or switch to an alternative browser such as <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="http://www.google.com/chrome/">Chrome</a>.</p>
+                <a href="#" class="btn std" id="unsupported-browser-button">I understand</a>
+          </div>
+        </div> -->
+
+        <!-- <script src="/compiled/js/marketing_site_v2.js?ver=8e0b070"></script> -->
+        <!-- <script>
+            flowplayer.conf = {
+               analytics: 'UA-34300777-1',
+               key:       '$119799422308333'
+            };
+        </script> -->
+        <!-- <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-34300777-1', 'auto');
+          ga('require', 'autotrack');
+          ga('send', 'pageview');
+        </script> -->
+    </body>
+</html>

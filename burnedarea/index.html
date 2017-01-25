@@ -1,0 +1,389 @@
+
+<!doctype html>
+<html>
+    <head>
+      <title>Uyanbil - Satellite Fire Information System</title>
+      <link rel="icon" href=../img/logo/uyanbil-tab-logo_noBG.png>
+      <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+      <!-- http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css -->
+      <link rel="stylesheet" type="text/css" href="../css/main.css">
+    </head>
+    <body>
+      <header class="site-header">
+          <nav class="left-nav">
+              <a class="page-scroll" href="../">Home</a>
+          </nav>
+
+          <a href="/" class="site-logo">
+              <img src="../img/logo/uyanbil-logo.svg" alt="Uyanbil">
+          </a>
+
+          <nav class="left-nav">
+          </nav>
+      </header>
+
+      <header class="mobile-header">
+          <div class="close"></div>
+          <a href="/" class="mobile-logo">
+              <img src="../img/logo/uyanbil-mobile-logo.svg" alt="Uyanbil">
+          </a>
+          <a href="/" class="full-logo">
+              <img src="../img/logo/uyanbil-logo.svg" alt="Uyanbil">
+          </a>
+          <div class="show-mobile-menu">
+              <img src="../img/logo/mobile-menu.svg" alt="menu">
+          </div>
+          <nav class="mobile-nav padding-md-top">
+              <a class="page-scroll" href="../">Home</a>
+          </nav>
+      </header>
+
+        <div class="container terms-and-privacy padding-xlg-top">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 buffer-bottom">
+            <h2 class="text-center">Burned Area</h2>
+            <h5 class="text-center medium-grey">Cartography of Fire Affected Areas</h5>
+            <!-- <p>Coming Soon!</p> -->
+        </div>
+    </div>
+    <div class="row padding-xlg-top padding-md-bottom">
+        <!-- <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>1. Application</strong></h6>
+            <p>Our privacy policy (the “Privacy Policy”) describes how UrtheCast Corp. and its affiliates(“us”, “we” or “our”) collect and use your (“you” or “your”) information through a variety of means. By visiting UrtheCast.com (the “Site”) or using the services available through the Site (the “Services” and together with the Site, the “UrtheCast Community”), or otherwise using or engaging with our products, services or attending our events, you are agreeing to the Privacy Policy.</p>
+            <p>A summary is provided on the right side of these Terms but it is not legally binding, so be sure to read the full Privacy Policy</p>
+        </div> -->
+        <div class="col-md-6 col-sm-6 summary">
+          <p align="justify"><font size="4">B</font>urnt area maps derived from satellite imagery are widely
+            used to investigate the causes and consequences (such as pyrogenic emissions) of vegetation fires.
+            Two products with daily resolution are currently available:</p>
+          <ul>
+            <li>L3JRC product (<a href="http://forobs.jrc.ec.europa.eu/products/burnt_areas_L3JRC/GlobalBurntAreas2000-2007.php">Tansey et al. 2008</a>)</li>
+            <li>Moderate Resolution Imaging Spectroradiometer <a href="http://modis-fire.umd.edu/pages/BurnedArea.php">Burned Area Product</a>
+              (<a href="http://lcluc.umd.edu/documents/roy-dp-jin-y-lewis-pe-justice-co-2005-prototyping-global-algorithm-systematic-fire">Roy et al. 2005</a>;
+              <a href="http://modis.gsfc.nasa.gov/sci_team/pubs/abstract.php?id=01565">2008</a>)</li>
+          </ul>
+          <p align="justify">For both the fire scar detection is based on rapid drops in vegetation-related reflectance of the area affected
+            by the fire burnings.</p>
+          <p align="justify">Major differences have been reported, however, between these fire scar products, mainly on account of
+            overestimation of the burnt area by the L3JRC
+            (<a href="http://onlinelibrary.wiley.com/store/10.1029/2008JD011361/asset/jgrd15330.pdf;jsessionid=818E9B5C51C0883ABFB0B60F19E1F101.f01t01?v=1&t=ipo3hmya&s=e3a3742945b028ebde3e25f4f95e390c35d9dacc">Chang and Song 2009</a>,
+            <a href="http://www.fao.org/fileadmin/templates/gfims/docs/MODIS_Fire_Users_Guide_2.4.pdf">Giglio et al. 2010</a>).</p>
+          <p align="justify">The most widely used is definitely the MODIS one. For this, the mapping of burnt areas is based mainly on the 250
+            meters bands, although the MODIS bands at 500 meters resolution are also used, as they provide complementary information
+            that is used for improved burnt area discrimination.</p>
+          <p align="justify">This type of satellite imagery allows detailed mapping of fires of about 50ha or larger. Although only a fraction of
+            the total number of fires is mapped (fires smaller than 40 ha are not mapped). The analysis of historical fire data has
+            determined that the area burnt by wildfires of this size represents in most cases the large majority of the total area
+            burnt. On average, the area burnt by fires of at least 40 ha accounts for about 75% of the total area burnt every year
+            in the Southern Europe (JRC, 2011).</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+          <p align="justify">Since the launch of SUOMI-VIIRS, a VIIRS Burned Area product has been developed, that will continue in a consistent
+            manner the 14-year MODIS record of global mapping of fire burned area.</p>
+          <p align="justify">Due to the data and analysis requirements associated with the MODIS science processing algorithms to yield reliable
+            burn scar products, the burn scar data are not available in near real-time. Currently, MODIS burn scar data are compiled
+            by the Active Fire Mapping Program as monthly datasets are typically available approximately 10 days after the beginning
+            of each month. The burn scar data are provided as monthly GeoTiff and KMZ products for the specified geographic regions.</p>
+          <div class="row">
+            <div class="col-sm-6 col-md-12">
+              <div class="thumbnail">
+                <img src="antalya.png" alt="...">
+                <div class="caption">
+                  <p style="line-height:90%;" align="justify"><font size="2"><i>The large fire recorded in the municipalities of
+                    Tasagil and Akbas (Antalya), as viewed by the MODIS 500m burned area collected between July 31 and August 9,
+                    2008 and coloured by day of the year they were detected. The fires occurred in areas forest, mainly dominated
+                    by Turkish red pines (Pinus brutia) and affected 171.5 km2 according to these data. Also shown as a white
+                    outline the ground reported burned area, of around 206 km2 and, as a black outline, the 2008 burned area
+                    perimeter extracted from EFFIS that encompass 164 km2. The background is a MODIS Blue Marble
+                    image (500m resolution).</i></font></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- <div class="row padding-md-bottom"> -->
+        <!-- <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>2. What We Collect From You</strong></h6>
+            <p>We collect personal information as it is relevant
+            to your experience with the UrtheCast
+            Community. We automatically collect information
+            about who uses the UrtheCast Community and
+            when they use it. This includes, but is not limited
+            to, your device identifier and hardware
+            information, IP address, browser type and
+            language, cookie information, system type,
+            whether you have enabling software to access
+            certain features, access times, or referring
+            website URLs.</p>
+
+            <p>We do not knowingly collect or solicit personal
+            information from children under 13.</p>
+
+            <p>We may combine information you give us on the
+            UrtheCast Community with other information that
+            you give us. This may include, but is not limited
+            to, information from our newsletter, events,
+            products and applications, or other interactions.</p>
+        </div> -->
+        <!-- <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>We automatically collect general UrtheCast
+            Community usage information. Also, we may
+            combine information we collect from the
+            UrtheCast Community with other information
+            that you give us.</p>
+        </div> -->
+    <!-- </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>3. Using Information</strong></h6>
+            <p>We may use your information to enhance,
+            customize and personalize your UrtheCast
+            Community experiences and communications.
+            We may also use your information to help
+            operate, provide, improve and maintain the
+            UrtheCast Community, including analyzing user
+            behavior and trends. As well, we may send you
+            administrative messages or other information
+            about the UrtheCast Community. If you have
+            opted-in, we may use your information to
+            communicate with you about our products,
+            services and events. We may also use your
+            personal information to display relevant
+            marketing to you.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>We may use your information to keep the UrtheCast
+            Community customized for your
+            use and to improve and maintain the
+            UrtheCast Community. If you have let us
+            know that you are okay with us being in
+            contact with you (opted-in), we may contact
+            you using your personal information.</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>4. Sharing Information</strong></h6>
+            <p>We may provide your information to our affiliates
+            or service providers if it is necessary to conduct
+            our business. For example, service providers
+            may handle data management, email
+            distribution, market research, information
+            analysis, and promotions management. We may
+            also share your information to administer
+            features (e.g. graphic or data downloads or other
+            interactive functionality).</p>
+            <p>We may also disclose information if we need to
+            by law, to enforce our policies, or to protect our
+            or others' rights, property or safety. We may
+            share information to prevent illegal uses of our
+            products and services or violations of our terms
+            of service (the “Terms”)
+            <a href="https://www.urthecast.com/company/terms">https://www.urthecast.com/company/terms</a>,
+            or to defend ourselves against third-party claims.
+            We may also share information with companies
+            assisting in fraud protection or investigation.</p>
+            <p>As well, if we sell our business or a part of it, we
+            may share your information with the buyer. If this
+            should happen, we will give you notice by
+            posting to the website or some other form of
+            communication.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>We may share your information with other
+            companies in the UrtheCast family or our
+            service providers if they need it to deliver our
+            services.</p>
+            <p>We may also share your information if we
+            think that we are required to by law or if our
+            business is purchased.</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>5. Sharing You Choose</strong></h6>
+            <p>In orer to participate in certain features of the UrtheCast
+            Community, you may choose to share personal information, including but not limited to,
+            your name, zip/postal code and email. You may
+            also choose to share your activity on other
+            platforms, such as Facebook and Twitter. Please
+            read the privacy policies of those platforms,
+            because your UrtheCast Community activity
+            published on those platforms will no longer be
+            governed by this Privacy Policy (and will be
+            governed by the privacy policy of the platform).</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>If you choose to share your UrtheCast
+            activity on other platforms, this privacy
+            policy will not apply (and theirs will).</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>6. Changes to This Privacy Policy</strong></h6>
+            <p>Our services and promotions will change over
+            time. This Privacy Policy will be updated
+            periodically to reflect those changes and
+            corresponding changes in our information
+            practices. Whenever we revise this Privacy
+            Policy, we will change the date on the Privacy
+            Policy to indicate when the revisions were made.
+            By using the UrtheCast Community, you agree to
+            accept the terms of the Privacy Policy as stated
+            at the time you use it. Any future access to the
+            UrtheCast Community after the posting of a
+            revised Privacy Policy will be deemed to be your
+            acceptance of the revised Privacy Policy.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>The Privacy Policy can change. Please
+            remember to check back here every so often
+            to see about any changes.</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>7. Other Sites and Links</strong></h6>
+            <p>The UrtheCast Community may contain links to
+            other websites that operate independently of us
+            and are not under our control. We provide links
+            to other websites solely for your convenience
+            and information. Other websites may have their
+            own privacy notices, which we suggest you
+            review if you visit any linked websites. We are
+            not responsible for information that is provided
+            by, or collected through, those websites or for
+            any other use of those websites.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>Any links to other websites are only for your
+            convenience. Those sites will be governed by
+            their own terms and privacy policy (not ours).</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>8. Communication / Unsubscribe / Opt-Out</strong></h6>
+            <p>If you have opted-in, we may send you service related communications. To unsubscribe and
+            stop receiving messages, please change your
+            settings or follow the instructions in the email,
+            text message, notification or other message
+            type. If you have unsubscribed from any of our
+            communications, due to production schedules,
+            you may receive communications already in
+            production.</p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>You can opt out of communications from us at any time
+            using the unsubscribe mechanism in the message we send.</p>
+        </div>
+    </div> -->
+    <!-- <div class="row padding-md-bottom">
+        <div class="col-md-6 col-sm-6 legalese">
+            <h6><strong>9. Terms of Service</strong></h6>
+            <p>Your use of the UrtheCast Community is subject
+            to this Privacy Policy as well as our Terms of
+            Service <a href="https://www.urthecast.com/company/terms">https://www.urthecast.com/company/terms</a>
+            </p>
+        </div>
+        <div class="col-md-6 col-sm-6 summary">
+            <h6><strong>Summary</strong></h6>
+            <p>Our Terms of Service also apply.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="text-center padding-sm-top padding-lg-bottom">
+                <a href="mailto:inquiries@uyanbil.com" class="btn std">inquiries@uyanbil.com</a>
+            </div>
+        </div>
+      </div>
+    </div> -->
+
+    <footer id="footer">
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-6 col-sm-3 column">
+                <h4>Resources</h4>
+                <ul class="list-unstyled">
+                    <li><a target="_blank" href="https://firms.modaps.eosdis.nasa.gov/">FIRMS NASA</a></li>
+                    <li><a target="_blank" href="http://landsaf.meteo.pt/">LSA SAF</a></li>
+                    <li><a target="_blank" href="http://www.eumetsat.int/website/home/index.html">EUMETSAT</a></li>
+                    <li><a target="_blank" href="http://wfabba.ssec.wisc.edu/index.html">WFABBA</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-3 column">
+                <h4>About</h4>
+                <ul class="list-unstyled">
+                    <!--<li><a href="#">Turkish Page</a></li>-->
+                    <li><a target="_blank" href="http://www.eies.itu.edu.tr/en/homepage">Contact EIES</a></li>
+                    <li><a disabled style="cursor: default;">API</a></li>
+                    <li><a target="_blank" href="http://www.itu.edu.tr/en/">Istanbul Technical University</a></li>
+                    <li><a href="../privacy/">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+              <!-- <div class="col-xs-12 col-sm-3 column">
+                  <h4>Stay Posted</h4>
+                  <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
+                      </div>
+                      <div class="form-group">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
+                      </div>
+                  </form>
+              </div> -->
+              <!-- <div class="col-xs-12 col-sm-3 text-right">
+                  <h4>Follow</h4>
+                  <ul class="list-inline">
+                    <li><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
+                    <li><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>
+                    <li><a rel="nofollow" href="" title="Dribble"><i class="icon-lg ion-social-dribbble-outline"></i></a></li>
+                  </ul>
+              </div> -->
+          </div>
+          <br/>
+          <span class="pull-right text-muted small"><a href="http://maps.itu.edu.tr/">Developed by Maps@ITU</a> &copy;2016 Uyanbil</span>
+      </div>
+    </footer>
+
+        <!-- <div class="hidden unsupported-browser-overlay" id="unsupported-browser-overlay">
+            <div class="content">
+                <h4 class="modal-title">You are browsing with an unsupported browser.</h4>
+                <p>We're sorry, but the version of Internet Explorer you're using is not supported by the UrtheCast web site.</p>
+                <p>We highly recommend you upgrade to a more recent version of Internet Explorer, or switch to an alternative browser such as <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="http://www.google.com/chrome/">Chrome</a>.</p>
+                <a href="#" class="btn std" id="unsupported-browser-button">I understand</a>
+          </div>
+        </div> -->
+
+        <!-- <script src="/compiled/js/marketing_site_v2.js?ver=8e0b070"></script> -->
+        <!-- <script>
+            flowplayer.conf = {
+               analytics: 'UA-34300777-1',
+               key:       '$119799422308333'
+            };
+        </script> -->
+        <!-- <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-34300777-1', 'auto');
+          ga('require', 'autotrack');
+          ga('send', 'pageview');
+        </script> -->
+    </body>
+</html>
