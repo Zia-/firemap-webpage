@@ -1,7 +1,7 @@
 import os, time, csv, json
 
 viirsGlobalUrl = "https://firms.modaps.eosdis.nasa.gov/active_fire/viirs/text/VNP14IMGTDL_NRT_Global_24h.csv"
-basePath = '/var/www/html/maps/realdata-geojson/viirs/'
+basePath = '/itu/users/geoitweb/fires.itu.edu.tr/public_html/nearrealtime/js/realdata-geojson/viirs/'
 baseFileName = 'VNP14IMGTDL_NRT_Global_24h'
 
 def createElemGeojson(latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,confidence,version,bright_ti5,frp,daynight):
@@ -22,7 +22,7 @@ def createElemGeojson(latitude,longitude,bright_ti4,scan,track,acq_date,acq_time
     coord = list()
     coord.append(float(longitude))
     coord.append(float(latitude))
-    geomValue['coordinates'] = coord 
+    geomValue['coordinates'] = coord
     geojsonElemData = {}
     geojsonElemData['type'] = "Feature"
     geojsonElemData['properties'] = propValue
@@ -49,13 +49,13 @@ def genGeojson():
 	    else:
 		if ((32.774850 <= float(row[0]) <= 44.900607) and (20.551105 <= float(row[1]) <= 49.930658)):
 		    dataList.append(createElemGeojson(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11],row[12]))
-    
+
     geojsonData['features'] = dataList
-    json.dump(geojsonData, open(basePath + baseFileName + "_turkeyFiltered.geojson", 'wb'))    
+    json.dump(geojsonData, open(basePath + baseFileName + "_turkeyFiltered.geojson", 'wb'))
 
 def process():
     os.system("wget " + viirsGlobalUrl + " -P " + basePath)
-    genGeojson()    
+    genGeojson()
 
 def main():
     if (os.path.isfile(basePath + baseFileName + ".csv")):

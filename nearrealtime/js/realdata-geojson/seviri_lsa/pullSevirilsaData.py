@@ -6,7 +6,7 @@ import numpy as np
 ftpUrl = 'safmil.ipma.pt'
 user = 'rggb'
 passwd = 'rgTuBgb8'
-basePath = '/var/www/html/maps/realdata-geojson/seviri_lsa/'
+basePath = '/itu/users/geoitweb/fires.itu.edu.tr/public_html/nearrealtime/js/realdata-geojson/seviri_lsa/'
 baseFileName = 'HDF5_LSASAF_MSG_FRP-PIXEL-ListProduct_MSG-Disk'
 ftpBasePath = '/OperationalChain/LSASAF_Products/FRP-PIXEL/'
 
@@ -35,7 +35,7 @@ def h5py2Dic(unzipFilePath):
 def createElemGeojson(acqtime,fire_confidence,bt_mir,bt_tir,pixel_size,frp,longitude,latitude):
     propValue = {}
     propValue['ACQUISITION_TIME'] = int(acqtime)
-    # We need to divide by 100, 10 etc for scaling factor. It was given in Seviri documentation 
+    # We need to divide by 100, 10 etc for scaling factor. It was given in Seviri documentation
     propValue['FIRE_CONFIDENCE'] = float(fire_confidence/100.0)
     propValue['BRIGHTNESS_TEMPERATURE_MIR'] = float(bt_mir/10.0)
     propValue['BRIGHTNESS_TEMPERATURE_TIR'] = float(bt_tir/10.0)
