@@ -6,7 +6,7 @@ import numpy as np
 ftpUrl = 'safmil.ipma.pt'
 user = 'rggb'
 passwd = 'rgTuBgb8'
-basePath = '/itu/users/geoitweb/fires.itu.edu.tr/public_html/nearrealtime/js/realdata-geojson/seviri_lsa/'
+basePath = '/home/giswebserver/web_sites/fires.itu.edu.tr/public_html/nearrealtime/js/realdata-geojson/seviri_lsa/'
 baseFileName = 'HDF5_LSASAF_MSG_FRP-PIXEL-ListProduct_MSG-Disk'
 ftpBasePath = '/OperationalChain/LSASAF_Products/FRP-PIXEL/'
 
