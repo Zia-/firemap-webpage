@@ -1,7 +1,7 @@
 import os, time, csv, json
 
 viirsGlobalUrl = "https://firms.modaps.eosdis.nasa.gov/active_fire/viirs/text/VNP14IMGTDL_NRT_Global_24h.csv"
-basePath = '/itu/users/geoitweb/fires.itu.edu.tr/public_html/nearrealtime/js/realdata-geojson/viirs/'
+basePath = '/home/giswebserver/web_sites/fires.itu.edu.tr/public_html/nearrealtime/js/realdata-geojson/viirs/'
 baseFileName = 'VNP14IMGTDL_NRT_Global_24h'
 
 def createElemGeojson(latitude,longitude,bright_ti4,scan,track,acq_date,acq_time,satellite,confidence,version,bright_ti5,frp,daynight):
