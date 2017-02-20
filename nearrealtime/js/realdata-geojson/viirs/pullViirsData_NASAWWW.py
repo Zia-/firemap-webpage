@@ -1,6 +1,5 @@
 import os, time, csv, json
 
-viirsGlobalUrl = "https://firms.modaps.eosdis.nasa.gov/active_fire/viirs/text/VNP14IMGTDL_NRT_Global_24h.csv"
 basePath = '/itu/users/geoitweb/fires.itu.edu.tr/public_html/nearrealtime/js/realdata-geojson/viirs/'
 baseFileName = 'VNP14IMGTDL_NRT_Global_24h'
 
@@ -47,21 +46,12 @@ def genGeojson():
 		# Ignore first row, which is attributes name.
 		pass;
 	    else:
-		if ((32.774850 <= float(row[0]) <= 44.900607) and (20.551105 <= float(row[1]) <= 49.930658)):
 		    dataList.append(createElemGeojson(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11],row[12]))
 
     geojsonData['features'] = dataList
-    json.dump(geojsonData, open(basePath + baseFileName + "_turkeyFiltered.geojson", 'wb'))
-
-def process():
-    os.system("wget " + viirsGlobalUrl + " -P " + basePath)
-    genGeojson()
+    json.dump(geojsonData, open(basePath + baseFileName + "_wholeWorld_NASAWWW.geojson", 'wb'))
 
 def main():
-    if (os.path.isfile(basePath + baseFileName + ".csv")):
-        os.remove(basePath + baseFileName + ".csv")
-        process()
-    else:
-        process()
+    genGeojson()
 
 main()

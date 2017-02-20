@@ -1,7 +1,7 @@
 import os, time, csv, json
 
 modisc6GlobalUrl = "https://firms.modaps.eosdis.nasa.gov/active_fire/c6/text/MODIS_C6_Global_24h.csv"
-basePath = '/home/giswebserver/web_sites/fires.itu.edu.tr/public_html/nearrealtime/js/realdata-geojson/modis_c6/'
+basePath = '/itu/users/geoitweb/fires.itu.edu.tr/public_html/nearrealtime/js/realdata-geojson/modis_c6/'
 baseFileName = 'MODIS_C6_Global_24h'
 
 def createElemGeojson(latitude,longitude,brightness,scan,track,acq_date,acq_time,satellite,confidence,version,bright_t31,frp,daynight):
